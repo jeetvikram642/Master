@@ -1,0 +1,18 @@
+p{
+
+
+    color: aqua;
+}
+
+.user{
+
+
+    color: blue;
+}
+
+
+.user:hover{
+
+
+    color: green;
+}

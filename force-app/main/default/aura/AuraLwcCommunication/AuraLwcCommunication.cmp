@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="message" type="String"/>
+<lightning:card title="AurA Comp">
+
+
+<div>{!v.message}</div>
+ <div>
+
+    <c:lwcAuraCommunication title="Hello This Message From Aura" onsendmsg="{!c.handleMessage}"></c:lwcAuraCommunication>
+ </div>
+
+</lightning:card>
+</aura:component>

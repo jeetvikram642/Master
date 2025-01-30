@@ -1,0 +1,62 @@
+<template>
+  
+    <lightning-card  title="Hello World">
+        <div class="slds-m-around_medium">
+        <lightning-input type="text" label="Enter Title"  onkeyup={changeTitle}></lightning-input>
+    <div>Hello World {firstName} have title {title}</div>
+        </div>
+    </lightning-card>
+    <lightning-card  title="@track">
+        <div class="slds-m-around_medium">
+        <lightning-input type="text" label="Enter City"  onkeyup={changeCity}></lightning-input>
+    <div>My city is {address.city}</div>
+        </div>
+    </lightning-card>
+
+    <lightning-card  title="Directuve">
+        <lightning-button variant="brand" label="Brand" title="Show" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    
+    <div>
+      <template if:true={isInvisible}>
+       <div> Please show it </div>
+      </template>
+
+    </div>
+    </lightning-card>
+
+    <lightning-card  title="Looping">
+
+
+      <template for:each={carList} for:item="car">
+
+       <ul class="slds-has-dividers_around-space" key={car}>
+        <li class="slds-item">{car}</li>
+
+      </ul>
+      </template>
+
+
+    </lightning-card>
+    <lightning-card  title="CEO Name">
+
+
+        <template iterator:ceo={ceoList}>
+
+     <div key={ceo.value.id}>
+         <ul class="slds-has-dividers_around-space" >
+            <template if:true={ceo.first}>
+                <div> Tetsing</div>
+            </template>
+          <li class="slds-item">{ceo.value.name}</li>
+       
+        </ul>
+    </div>
+        </template>
+  
+  
+      </lightning-card>
+  
+
+
+
+</template>
