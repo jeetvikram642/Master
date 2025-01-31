@@ -23,8 +23,7 @@ export default class LifeCycleParent extends LightningElement {
         console.log('Inside Parent rendered Callback --')
 
      }
-
-     name='Vikram'
+     name='Vikram1'
      changeHandler(event){
 
       this.name = event.target.value
