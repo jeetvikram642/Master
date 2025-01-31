@@ -19,4 +19,11 @@ export default class ShowToastMessage extends LightningElement {
         this.dispatchEvent(shEvent);
     }
 
+
+    testVikram(){
+
+
+        
+    }
+
 }
