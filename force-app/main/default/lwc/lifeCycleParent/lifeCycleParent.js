@@ -24,7 +24,9 @@ export default class LifeCycleParent extends LightningElement {
 
      }
 
-     name='Vikram'
+
+     name='Vikram3'
+
      changeHandler(event){
 
       this.name = event.target.value
